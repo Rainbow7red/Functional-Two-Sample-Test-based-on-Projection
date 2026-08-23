@@ -16,7 +16,8 @@ install.packages(c("MASS", "fda"))
 source("functional_projection_tests.R")
 
 # Generate two groups of functional observations.
-# example_data is a list containing grid, x, and y, where grid has 50 observation times; x and y are 25-by-50 matrices (curves by time points).
+# example_data is a list containing grid, x, and y.
+# grid has 50 observation times; x and y are 25-by-50 matrices (curves by time points).
 example_data <- simulate_functional_two_sample_data(
   n1 = 25,                         # sample size in group 1
   n2 = 25,                         # sample size in group 2
